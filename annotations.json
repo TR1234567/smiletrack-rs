@@ -1,0 +1,10 @@
+[
+  {
+    "frame": "./image/test.jpg",
+    "annotations": []
+  },
+  {
+    "frame": "./image/test_image.jpg",
+    "annotations": []
+  }
+]

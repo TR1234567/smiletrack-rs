@@ -1,0 +1,3 @@
+cargo:rustc-link-search=/opt/homebrew/opt/llvm/lib
+cargo:rustc-link-lib=dylib=clang
+cargo:include=/opt/homebrew/Cellar/llvm/20.1.3/include

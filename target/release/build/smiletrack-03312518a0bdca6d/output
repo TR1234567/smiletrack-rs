@@ -1,0 +1,5 @@
+cargo:rustc-link-search=native=/Users/witsarut/Downloads/Tracking/SMILEtrack/Citysurvey_api/smiletrack-rs/libtorch/lib
+cargo:rustc-link-lib=dylib=torch
+cargo:rustc-link-lib=dylib=c10
+cargo:include=/Users/witsarut/Downloads/Tracking/SMILEtrack/Citysurvey_api/smiletrack-rs/libtorch/include
+cargo:include=/Users/witsarut/Downloads/Tracking/SMILEtrack/Citysurvey_api/smiletrack-rs/libtorch/include/torch/csrc/api/include

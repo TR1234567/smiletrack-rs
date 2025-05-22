@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Maximum allowed file size in bytes (100 MB)
+max_size=$((100 * 1024 * 1024))
+
+# Get list of staged files (excluding deleted files)
+staged_files=$(git diff --cached --name-only --diff-filter=ACM)
+
+found_large_file=0
+
+for file in $staged_files; do
+    if [ -f "$file" ]; then
+        size=$(stat -f%z "$file")
+        if [ "$size" -gt "$max_size" ]; then
+            echo "Error: $file is larger than 100 MB (size: $((size / 1024 / 1024)) MB). Commit aborted."
+            found_large_file=1
+        fi
+    fi
+done
+
+if [ $found_large_file -eq 1 ]; then
+    exit 1
+fi
+
+exit 0 

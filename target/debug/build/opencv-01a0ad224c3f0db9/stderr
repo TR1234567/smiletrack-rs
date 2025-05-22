@@ -1,0 +1,250 @@
+=== Crate version: 0.94.4
+=== Environment configuration:
+===   OPENCV_PACKAGE_NAME = None
+===   OPENCV_PKGCONFIG_NAME = None
+===   OPENCV_CMAKE_NAME = None
+===   OPENCV_CMAKE_BIN = None
+===   OPENCV_VCPKG_NAME = None
+===   OPENCV_LINK_LIBS = None
+===   OPENCV_LINK_PATHS = None
+===   OPENCV_INCLUDE_PATHS = None
+===   OPENCV_DISABLE_PROBES = None
+===   OPENCV_MSVC_CRT = None
+===   CMAKE_PREFIX_PATH = None
+===   OpenCV_DIR = None
+===   PKG_CONFIG_PATH = None
+===   VCPKG_ROOT = None
+===   VCPKGRS_DYNAMIC = None
+===   VCPKGRS_TRIPLET = None
+===   OCVRS_DOCS_GENERATE_DIR = None
+===   DOCS_RS = None
+===   PATH = Some("/usr/local/opt/llvm/bin:/opt/homebrew/opt/llvm/bin:/Users/witsarut/.cargo/bin:/Users/witsarut/.bun/bin:/Users/witsarut/.pyenv/shims:/Users/witsarut/.pyenv/bin:/Users/witsarut/.nvm/versions/node/v20.17.0/bin:/opt/homebrew/opt/openjdk@11/bin:/usr/local/opt/ruby/bin:/Users/witsarut/Downloads/google-cloud-sdk/bin:/Users/witsarut/miniconda3/bin:/Users/witsarut/miniconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/witsarut/Library/Application Support/Coursier/bin")
+=== Enabled features:
+===   3D
+===   ALPHAMAT
+===   ARUCO
+===   ARUCO_DETECTOR
+===   BARCODE
+===   BGSEGM
+===   BIOINSPIRED
+===   CALIB
+===   CALIB3D
+===   CCALIB
+===   CUDAARITHM
+===   CUDABGSEGM
+===   CUDACODEC
+===   CUDAFEATURES2D
+===   CUDAFILTERS
+===   CUDAIMGPROC
+===   CUDALEGACY
+===   CUDAOBJDETECT
+===   CUDAOPTFLOW
+===   CUDASTEREO
+===   CUDAWARPING
+===   CVV
+===   DEFAULT
+===   DNN
+===   DNN_SUPERRES
+===   DPM
+===   FACE
+===   FEATURES
+===   FEATURES2D
+===   FLANN
+===   FREETYPE
+===   FUZZY
+===   GAPI
+===   HDF
+===   HFS
+===   HIGHGUI
+===   IMGCODECS
+===   IMGPROC
+===   IMG_HASH
+===   INTENSITY_TRANSFORM
+===   LINE_DESCRIPTOR
+===   MCC
+===   ML
+===   OBJDETECT
+===   OPTFLOW
+===   OVIS
+===   PHASE_UNWRAPPING
+===   PHOTO
+===   PLOT
+===   QUALITY
+===   RAPID
+===   RGBD
+===   SALIENCY
+===   SFM
+===   SHAPE
+===   SIGNAL
+===   STEREO
+===   STITCHING
+===   STRUCTURED_LIGHT
+===   SUPERRES
+===   SURFACE_MATCHING
+===   TEXT
+===   TRACKING
+===   VIDEO
+===   VIDEOIO
+===   VIDEOSTAB
+===   VIZ
+===   WECHAT_QRCODE
+===   XFEATURES2D
+===   XIMGPROC
+===   XOBJDETECT
+===   XPHOTO
+===   XSTEREO
+=== Detected probe priority boost based on environment vars: pkg_config: false, cmake: false, vcpkg: false
+=== Probing the OpenCV library in the following order: environment, pkg_config, cmake, vcpkg_cmake, vcpkg
+=== Can't probe using: environment, continuing with other methods because: Some environment variables are missing
+=== Probing OpenCV library using pkg_config
+=== Successfully probed using: pkg_config
+=== OpenCV library configuration: Library {
+    include_paths: [
+        "/usr/local/include/opencv4",
+    ],
+    version: Version {
+        major: 4,
+        minor: 8,
+        patch: 0,
+    },
+    enabled_features: [
+        "eigen",
+        "inttypes_h 1",
+        "openjpeg",
+        "jpeg",
+        "opencl",
+        "opencl_static",
+        "openexr",
+        "png",
+        "pthread",
+        "pthreads_pf",
+        "tiff",
+        "lapack",
+        "quirc",
+    ],
+    cargo_metadata: [
+        "cargo::rustc-link-search=/usr/local/lib",
+        "cargo::rustc-link-search=framework=/usr/local/lib",
+        "cargo::rustc-link-lib=opencv_gapi",
+        "cargo::rustc-link-lib=opencv_highgui",
+        "cargo::rustc-link-lib=opencv_ml",
+        "cargo::rustc-link-lib=opencv_objdetect",
+        "cargo::rustc-link-lib=opencv_photo",
+        "cargo::rustc-link-lib=opencv_stitching",
+        "cargo::rustc-link-lib=opencv_video",
+        "cargo::rustc-link-lib=opencv_calib3d",
+        "cargo::rustc-link-lib=opencv_features2d",
+        "cargo::rustc-link-lib=opencv_dnn",
+        "cargo::rustc-link-lib=opencv_flann",
+        "cargo::rustc-link-lib=opencv_videoio",
+        "cargo::rustc-link-lib=opencv_imgcodecs",
+        "cargo::rustc-link-lib=opencv_imgproc",
+        "cargo::rustc-link-lib=opencv_core",
+    ],
+}
+=== Found OpenCV version: 4.8.0 in headers located at: /usr/local/include/opencv4
+=== Detected OpenCV module header dir at: /usr/local/include/opencv4/opencv2
+=== Generating code in: /Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out
+=== Placing generated bindings into: /Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out/opencv
+=== Using OpenCV headers from: /usr/local/include/opencv4
+=== Clang: Homebrew clang version 20.1.3
+=== Clang command line args: [
+    "-isystem/opt/homebrew/Cellar/llvm/20.1.3/bin/../include/c++/v1",
+    "-isystem/opt/homebrew/Cellar/llvm/20.1.3/lib/clang/20/include",
+    "-isystem/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include",
+    "-isystem/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/Frameworks",
+    "-I/usr/local/include/opencv4",
+    "-F/usr/local/include/opencv4",
+    "-I/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp",
+    "-F/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp",
+    "-DOCVRS_PARSING_HEADERS",
+    "-includeocvrs_common.hpp",
+    "-std=c++17",
+]
+=== Available jobs from the environment created jobserver is: 0 or there is an error reading that value
+=== Creating a new job server with num_jobs: 8
+=== Generating 15 modules
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "calib3d" ""
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "core" ""
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "dnn" ""
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "features2d" ""
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "gapi" ""
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "highgui" ""
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "imgcodecs" ""
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "flann" ""
+=== Generated: imgcodecs in 1.158557875s
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "imgproc" ""
+=== Generated: flann in 1.172016584s
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "ml" ""
+=== Generated: highgui in 1.358320042s
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "objdetect" ""
+=== Generated: features2d in 1.672304667s
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "photo" ""
+=== Generated: calib3d in 2.610481375s
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "stitching" ""
+=== Generated: gapi in 2.654797125s
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "video" ""
+=== Generated: ml in 1.936484709s
+=== Running: "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-4004764379208d73/build-script-build" "/usr/local/include/opencv4" "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp" "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out" "videoio" ""
+=== Generated: photo in 1.809389333s
+=== Generated: objdetect in 2.460614584s
+=== Generated: imgproc in 2.758253917s
+=== Generated: videoio in 1.023961833s
+=== Generated: video in 1.486936542s
+=== Generated: dnn in 4.438306917s
+=== Generated: core in 4.79263925s
+=== Generated: stitching in 2.287109834s
+=== Total binding generation time: 4.899595875s
+=== Total binding collection time: 247.516333ms
+=== Compiler information: Tool {
+    path: "c++",
+    cc_wrapper_path: None,
+    cc_wrapper_args: [],
+    args: [
+        "-O0",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-fPIC",
+        "-gdwarf-2",
+        "-fno-omit-frame-pointer",
+        "--target=arm64-apple-macosx",
+        "-mmacosx-version-min=14.4",
+        "-std=c++17",
+        "-I",
+        "/Users/witsarut/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/opencv-0.94.4/src_cpp",
+        "-I",
+        "/Users/witsarut/Downloads/Tracking/SMILEtrack/smiletrack-rs/target/debug/build/opencv-01a0ad224c3f0db9/out",
+        "-I",
+        ".",
+        "-I",
+        "/usr/local/include/opencv4",
+        "-Wall",
+        "-Wextra",
+        "-Wno-deprecated-declarations",
+        "-Wno-deprecated-copy",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-Wno-comment",
+        "-Wno-uninitialized",
+        "-Wno-unused-variable",
+        "-Wno-ignored-qualifiers",
+        "-Wno-return-type-c-linkage",
+        "-Wno-overloaded-virtual",
+        "-Wno-delete-non-virtual-dtor",
+        "-F/usr/local/include/opencv4",
+        "-DOCVRS_FFI_EXPORT_SUFFIX=_0_94_4",
+    ],
+    env: [
+        (
+            "LC_ALL",
+            "C",
+        ),
+    ],
+    family: Clang {
+        zig_cc: false,
+    },
+    cuda: false,
+    removed_args: [],
+    has_internal_target_arg: false,
+}
+=== Total cpp build time: 6.5722655s

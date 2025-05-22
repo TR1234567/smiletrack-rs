@@ -1,0 +1,18 @@
+{
+  "model_path": "yolov7.torchscript",
+  "device": "cpu",
+  "input_size": [640, 640],
+  "track_high_thresh": 0.3,
+  "track_low_thresh": 0.2,
+  "new_track_thresh": 0.3,
+  "track_buffer": 30,
+  "match_thresh": 0.8,
+  "min_box_area": 10,
+  "mot20": false,
+  "proximity_thresh": 0.5,
+  "appearance_thresh": 0.25,
+  "with_reid": false,
+  "conf_threshold": 0.35,
+  "nms_threshold": 0.7,
+  "classes": [0, 1, 2, 3, 5, 7, 15, 16]
+} 
